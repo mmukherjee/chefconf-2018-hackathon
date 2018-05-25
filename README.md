@@ -1,5 +1,7 @@
 # Introduction
-
+This project is to demonstrate Chef Automate V2 integration/interaction.
+To demonstrate this - our setup has a Chef Server, a Chef Automate V2 server and two test boxes on AWS -one running Ubuntu and the other running Windows.
+We will initiate a compliance check from the Chef Compliance Server on the two nodes. We would expect to see the Compliance report on the Chef Automate V2 portal.
 
 # Server Details
 ## Chef Automate
