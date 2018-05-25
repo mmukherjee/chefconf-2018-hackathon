@@ -34,3 +34,24 @@ https://automate.chef.io/docs/install/
 
 ## Chef Automate to Chef Server connectivity  
 https://automate.chef.io/docs/data-collection/
+
+## Configuring the audit cookbook
+https://supermarket.chef.io/cookbooks/audit
+
+"Get" the "linux-baseline" profile in the Automate server
+
+Configure the node with these attributes:
+
+```
+{
+  "audit": {
+    "profiles": [
+      {
+        "name": "linux",
+        "compliance": "admin/linux-baseline"
+      }
+    ],
+    "reporter": "chef-server-automate"
+  }
+}
+```
